@@ -1,0 +1,82 @@
+.modal {
+  background-color: var(--background);
+  @apply flex flex-row items-center justify-center;
+  @apply w-full h-screen;
+}
+
+.modal-wrapper {
+  background-color: var(--background-white);
+  @apply rounded-[8px] p-[25px] max-w-[550px];
+}
+
+.modal-heading {
+  @apply text-2xl font-semibold mb-[4px];
+}
+.modal-heading-sec {
+  @apply text-xl mb-[4px];
+}
+
+.modal-subheading {
+  color: var(--text-muted);
+  @apply text-base mb-[4px];
+}
+
+.btn-container {
+  @apply flex flex-row items-center justify-end gap-[2px];
+
+  @apply w-full;
+}
+
+.btn-ghost {
+  color: var(--text-primary);
+  @apply flex flex-row items-center justify-center gap-[2px];
+  @apply text-sm font-semibold mb-[24px];
+}
+
+.divider-hr {
+  background-color: var(--divider);
+  @apply w-full h-[2px] mb-[24px];
+}
+
+.badge-primary {
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+  @apply rounded-[5px] py-[4px] px-[6px];
+  @apply text-xs font-semibold ml-[10px];
+}
+
+.align-top {
+  @apply flex flex-row items-start;
+}
+.modal-info {
+  color: var(--text-muted);
+  @apply text-sm;
+}
+
+.modal-input-container {
+  @apply flex flex-row gap-[4px] mb-[8px];
+}
+
+.model-input {
+  border: 2px solid var(--divider);
+  @apply rounded-[8px] px-[14px] py-[11px];
+}
+.input-toggle {
+  border: 2px solid var(--divider);
+  @apply flex flex-row gap-[24px];
+
+  @apply rounded-[8px] px-[14px] py-[11px];
+}
+.flex-column {
+  @apply flex flex-col;
+}
+
+.toggle-label {
+  @apply relative inline-flex items-center mr-5 cursor-pointer;
+}
+/* .toggle-input {
+  @apply sr-only peer;
+}
+.toggle-effect {
+  @apply w-11 h-6 bg-gray-200 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-orange-500;
+} */

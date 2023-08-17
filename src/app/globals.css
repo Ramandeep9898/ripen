@@ -8,14 +8,20 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
+    /* --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0; */
+    --background: rgb(245, 245, 245);
+    --background-white: rgb(255, 255, 255);
+    --text-primary: rgb(255, 108, 71);
+    --bg-primary: rgba(255, 108, 71, 0.2);
+    --text-muted: rgb(127, 127, 127);
+    --divider: rgba(214, 212, 212, 0.5);
   }
 }
-
+/* 
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -24,4 +30,17 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-} */
+}
+ */
+/* @layer base { */
+/* h1 {
+    @apply text-2xl;
+  }
+  h2 {
+    @apply text-xl;
+  } */
+/* } */
+
+.space-between {
+  @apply flex flex-row justify-between items-center;
+}
