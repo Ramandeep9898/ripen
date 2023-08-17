@@ -1,0 +1,12 @@
+.popup-container {
+  background-color: var(--background-popup);
+  @apply absolute top-0;
+  @apply w-full h-full;
+  @apply flex flex-row items-center justify-center;
+}
+
+.btn-primary {
+  background-color: var(--text-primary);
+  color: var(--background-white);
+  @apply rounded-[8px] px-[16px] py-[8px];
+}
