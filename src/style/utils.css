@@ -1,0 +1,39 @@
+/* flex utils */
+.flex-column {
+  @apply flex flex-col;
+}
+
+.justify-content-end {
+  @apply flex flex-row items-center justify-end gap-[2px];
+  @apply w-full;
+}
+.space-between {
+  @apply flex flex-row justify-between items-center;
+}
+
+/* btn utils */
+.btn-ghost {
+  color: var(--text-primary);
+  @apply flex flex-row items-center justify-center gap-[2px];
+  @apply text-sm font-semibold;
+}
+
+.btn-primary {
+  background-color: var(--text-primary);
+  color: var(--white);
+  @apply rounded-[8px] px-[16px] py-[8px];
+}
+
+/* divider utils */
+.divider-hr {
+  background-color: var(--divider);
+  @apply w-full h-[1.5px];
+}
+
+/* badge utils */
+.badge-primary {
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+  @apply rounded-[5px] py-[4px] px-[6px];
+  @apply text-xs font-semibold ml-[10px];
+}

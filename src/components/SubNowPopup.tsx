@@ -1,18 +1,21 @@
 import React from "react";
-import "../style/popup.css";
 
-export const SubNowPopup = ({ setPopup }: any) => {
+type SubNowPopupProps = {
+  setPopup: React.Dispatch<React.SetStateAction<Boolean>>;
+};
+
+export const SubNowPopup = ({ setPopup }: SubNowPopupProps): JSX.Element => {
   return (
     <div className="popup-container" onClick={() => setPopup(false)}>
       <div className="modal-wrapper">
-        <div className="modal-heading">
+        <h4 className="modal-heading  mb-[8px]">
           Inactivity Timeout is Premium Feature
-        </div>
-        <div className="modal-subheading">
+        </h4>
+        <p className="modal-subheading  mb-[24px]">
           Using Inactivity Timeout Set the inactivity timeout for a session.
-        </div>
-        <div className="divider-hr"></div>
-        <div className="">
+        </p>
+        <div className="divider-hr  mb-[24px]"></div>
+        <div className="justify-content-end">
           <button className="btn-primary" disabled>
             Subscribe now!
           </button>

@@ -5,44 +5,23 @@
 }
 
 .modal-wrapper {
-  background-color: var(--background-white);
+  -webkit-box-shadow: 1px 1px 5px 1px rgba(207, 207, 207, 1);
+  -moz-box-shadow: 1px 1px 5px 1px rgba(207, 207, 207, 1);
+  box-shadow: 1px 1px 5px 1px rgba(207, 207, 207, 1);
+  background-color: var(--white);
   @apply rounded-[8px] p-[25px] max-w-[550px];
 }
 
 .modal-heading {
-  @apply text-2xl font-semibold mb-[4px];
+  @apply text-2xl font-semibold;
 }
 .modal-heading-sec {
-  @apply text-xl mb-[4px];
+  @apply text-xl;
 }
 
 .modal-subheading {
   color: var(--text-muted);
-  @apply text-base mb-[4px];
-}
-
-.btn-container {
-  @apply flex flex-row items-center justify-end gap-[2px];
-
-  @apply w-full;
-}
-
-.btn-ghost {
-  color: var(--text-primary);
-  @apply flex flex-row items-center justify-center gap-[2px];
-  @apply text-sm font-semibold mb-[24px];
-}
-
-.divider-hr {
-  background-color: var(--divider);
-  @apply w-full h-[2px] mb-[24px];
-}
-
-.badge-primary {
-  color: var(--text-primary);
-  background-color: var(--bg-primary);
-  @apply rounded-[5px] py-[4px] px-[6px];
-  @apply text-xs font-semibold ml-[10px];
+  @apply text-base;
 }
 
 .align-top {
@@ -58,7 +37,7 @@
 }
 
 .modal-input-container {
-  @apply flex flex-row gap-[4px] mb-[8px];
+  @apply flex flex-row gap-[4px];
 }
 
 .model-input {
@@ -70,9 +49,6 @@
   @apply flex flex-row gap-[24px];
 
   @apply rounded-[8px] px-[14px] py-[11px];
-}
-.flex-column {
-  @apply flex flex-col;
 }
 
 .toggle-label {

@@ -1,3 +1,6 @@
+@import url("../style/modal.css");
+@import url("../style/popup.css");
+@import url("../style/utils.css");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -15,7 +18,7 @@
     --background-end-rgb: 0, 0, 0; */
     --background: rgb(245, 245, 245);
     --background-popup: rgba(0, 0, 0, 0.205);
-    --background-white: rgb(255, 255, 255);
+    --white: rgb(255, 255, 255);
     --text-primary: rgb(255, 108, 71);
     --bg-primary: rgba(255, 108, 71, 0.2);
     --text-muted: rgb(127, 127, 127);
@@ -42,6 +45,6 @@ body {
   } */
 /* } */
 
-.space-between {
+/* .space-between {
   @apply flex flex-row justify-between items-center;
-}
+} */
