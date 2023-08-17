@@ -52,6 +52,10 @@
   color: var(--text-muted);
   @apply text-sm;
 }
+.modal-error {
+  color: var(--text-primary);
+  @apply text-sm;
+}
 
 .modal-input-container {
   @apply flex flex-row gap-[4px] mb-[8px];
